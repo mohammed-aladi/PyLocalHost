@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.ico') }}">
+
+    <title>PyLocalHost</title>
+</head>
+
+<body>
+    <div class="mt-4 container">
+        <div class="row justify-content-center mb-4">
+            <div class="col-10">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-row bd-highlight mb-3 align-items-center"> 
+                    <div class="p-2 bd-highlight">
+                        <img src="{{ url_for('static', filename='img/cpu.png') }}" height="32" alt="">
+                    </div>
+                    <div class="pt-2">
+                        <h5 style="font-weight: bold; color: #346751; font-family: 'Cairo', sans-serif;">
+                            PyLocalHost
+                        </h5>
+                       
+                    </div>
+                   
+                </div>
+              
+                <div>
+                   
+                </div>
+            </div>
+                
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row row-cols-1 row-cols-md-1 g-4">
+
+                        <div class="col">
+                        
+                            <div class="bg-light p-2">
+                                <div class="d-flex flex-row-reverse bd-highlight">
+                                    <div>
+                                        <img src="{{ url_for('static', filename='img/direct-download.png') }}" height="32" alt="">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <h6 style="font-weight: bold;">الملفات المتوفرة للتنزيل</h6>
+                                    </div>
+                        
+                                </div>
+                        
+                                <ul class="list-group" style="border-style: dashed; border-color: cadetblue; border-width: 1px;">
+                                    {% for file in file_list %}
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <a href="/static/uploads/{{ file }}">
+                                            <h6 style="font-weight: bold;">{{ file }}</h6>
+                                        </a>
+                                
+                                
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                        
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+               
+                </div>
+                
+           
+
+            </div>
+        </div>
+    </div>
+<footer style="margin-top: 100px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <p class="text-center">Created by <a href="https://github.com/mohammed-aladi">Mohammed ALadi</a>. © 2021</p>
+            </div>
+        </div>
+           
+    </div>
+    
+</footer>
+    
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+  <script>
+      updateList = function () {
+            var input = document.getElementById('file');
+            var output = document.getElementById('fileList');
+
+            output.innerHTML = '<ul  class="list-group">';
+            for (var i = 0; i < input.files.length; ++i) {
+                output.innerHTML += '<li class="list-group-item">' + input.files.item(i).name + '</li>';
+            }
+            output.innerHTML += '</ul>';
+        }
+  </script>
+
+</body>
+
+
+</html>

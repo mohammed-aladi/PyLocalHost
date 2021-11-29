@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.ico') }}">
+<style>
+
+</style>
+    <title>PyLocalHost</title>
+</head>
+
+<body>
+    <div class="mt-4 container">
+        <div class="row justify-content-center ">
+            <div class="col-10">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-row bd-highlight mb-3 align-items-center">
+                        <div class="p-2 bd-highlight">
+                            <img src="{{ url_for('static', filename='img/cpu.png') }}" height="32" alt="">
+                        </div>
+                        <div class="pt-2">
+                            <h5 style="font-weight: bold; color: #346751; font-family: 'Cairo', sans-serif;">
+                                PyLocalHost
+                            </h5>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        
+                    </div>
+                </div>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+
+                                <div class="bg-light p-2">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <div class="align-self-center">
+                                           <button type="button" class="btn btn-primary-b" data-bs-toggle="modal" data-bs-target="#addfile">رفع ملف</button> 
+                                        </div>
+                                        
+                                        <div class="d-flex flex-row-reverse align-self-center">
+                                            <div class=" align-self-center">
+                                                <img src="{{ url_for('static', filename='img/direct-download.png') }}" height="32" alt="">
+                                            </div>
+                                            <div class="p-2 align-self-center">
+                                                <h6 style="font-weight: bold; margin-top: 8px;">الملفات المتوفرة للتنزيل</h6>
+                                            </div>
+                                        </div>
+
+                                     
+                                        
+
+
+                                    </div>
+                                <ul class="list-group"style="border-style: dashed; border-color: cadetblue; border-width: 1px;">
+                                    {% for file in file_list %}
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <a href="/static/uploads/{{ file }}"><h6 style="font-weight: bold;">{{ file }}</h6></a>
+                                        
+                                        
+                                        <a href="{{ url_for('delete_file', name=file) }}" class="btn badge bg-danger rounded-pill">delete</a>
+                                    </li>
+                                   {% endfor %}
+                                </ul>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col">
+                            
+                                <div class="bg-light p-2">
+                                    
+                                    <div class="d-flex flex-column">
+                                        <div class="p-2 bd-highlight">
+                                            <h4 style="font-weight: bold; text-align: center;">معلومات الاتصال</h4>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h6 style="font-weight: bold; text-align: right; direction: rtl;">العنوان: {{ request.host.split(':')[0] }}:5000</h6>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h6 style="font-weight: bold; text-align: right; direction: rtl;">كلمة المرور: {{ client_password }}</h6>
+                                        </div>
+                                    </div>
+                            
+                            
+                                </div>
+                            </div>
+                          
+
+
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="addfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin: 0px;"></button>
+                <h5 class="modal-title" id="exampleModalLabel">رفع ملف</h5>
+                
+            </div>
+            <div class="modal-body">
+            <form style="direction: rtl;" enctype="multipart/form-data" method="POST" action="{{ url_for("add_file") }}">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label" style="text-align: right;">اختر ملف للرفع</label>
+                    <input name="file" style="direction: ltr; text-align: left;" class="form-control" type="file" id="formFile">
+                </div>
+                
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-primary-b">أضغط هنا لرفع الملف</button>
+                </div>
+            </form>
+               
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>>
+
+
+
+</body>
+
+
+</html>

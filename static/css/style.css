@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body {
+  background-color: #f0f0f0;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #38ada9;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-link {
+  padding: 4px;
+  color: #000;
+}
+
+.nav-pills .nav-link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.list-group-item {
+  background-color: #f5f6fa;
+}
+
+.btn-primary-b {
+  color: #fff;
+  background-color: #38ada9;
+  border: 0px;
+}
+
+.btn-primary-b:hover {
+  color: #fff;
+  background-color: #678983;
+  border: 0px;
+}
+
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.upp {
+  transition: 0.4s;
+  color: #105652;
+  
+}
+.upp:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.4s;
+
+  
+}
+
+.label-up {
+  display: block;
+}
