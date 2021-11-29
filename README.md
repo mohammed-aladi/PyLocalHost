@@ -30,9 +30,8 @@ venv\Scripts\activate.bat
 ```bash
 pip install -r requirements.txt
 ```
-https://www.youtube.com/watch?v=qTKRKTZ2T1Y
 
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=qTKRKTZ2T1Y)](https://www.youtube.com/watch?v=qTKRKTZ2T1Y)
+![caption](https://www.pythonanywhere.com/user/mohammedaladi/files/home/mohammedaladi/mysite/kashtah/static/pylocalhost.gif)
 
 # تشغيل البرنامج
 
