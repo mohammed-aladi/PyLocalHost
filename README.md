@@ -15,7 +15,7 @@
 الخطوة الاولى: إنشاء بيئة افتراضية للبرنامج
 
 ```bash
- python3 -m venv venv
+ python -m venv venv
 ```
 
 الخطوة الثانية: تفعيل البيئة الافتراضية
@@ -28,4 +28,10 @@ venv\Scripts\activate.bat
 
 ```bash
 pip install -r requirements.txt
+```
+
+# تشغيل البرنامج
+
+```bash
+python app.py
 ```
