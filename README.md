@@ -31,7 +31,7 @@ venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
-![caption](https://www.pythonanywhere.com/user/mohammedaladi/files/home/mohammedaladi/mysite/kashtah/static/pylocalhost.gif)
+![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/pylocalhost.gif)
 
 # تشغيل البرنامج
 
