@@ -31,13 +31,13 @@ venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
-![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/pylocalhost.gif)
-
 # تشغيل البرنامج
 
 ```bash
 python app.py
 ```
+
+![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/pylocalhost.gif)
 
 # كيف قمنا ببرمجة البرنامج ؟
 لقد قمنا بإنشاء درس تفصيلي نشرح فيه طريقة بناء برنامج PyLocalHost من الصفر
