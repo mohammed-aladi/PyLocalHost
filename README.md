@@ -70,3 +70,8 @@ python app.py
 
 
 رابط الشرح:
+
+
+# رخصة الاستخدام
+
+[MIT License](LICENSE)
