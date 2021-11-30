@@ -1,4 +1,5 @@
 # 💻 PyLocalHost
+![PyPI](https://img.shields.io/pypi/v/flask?label=FLASK)
 
 ### السلام عليكم ورحمة الله وبركاته
 
