@@ -1,5 +1,7 @@
 # 💻 PyLocalHost
-[![image](https://img.shields.io/pypi/pyversions/pipenv.svg)](https://python.org/pypi/pipenv) ![PyPI](https://img.shields.io/pypi/v/flask?label=FLASK) [![image](https://img.shields.io/pypi/l/pipenv.svg)](LICENSE)
+[![image](https://img.shields.io/pypi/pyversions/pipenv.svg)](https://python.org/pypi/pipenv) 
+[![image](https://img.shields.io/pypi/v/flask?label=FLASK)](https://github.com/pallets/flask) 
+[![image](https://img.shields.io/pypi/l/pipenv.svg)](LICENSE)
 
 ------------------------------------------------------------------------
 
