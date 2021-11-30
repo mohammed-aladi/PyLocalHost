@@ -13,6 +13,8 @@
 
 يمكن لك تنصيب البايثون عن طريق هذا الربط https://www.python.org/downloads/
 # التنصيب
+بعد تحميل الملف, قم بفك ضغط الملف ثم ادخل عليه وفتح نافذة cmd 
+
 الخطوة الاولى: إنشاء بيئة افتراضية للبرنامج
 
 ```bash
@@ -31,13 +33,13 @@ venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
-![caption](https://www.pythonanywhere.com/user/mohammedaladi/files/home/mohammedaladi/mysite/kashtah/static/pylocalhost.gif)
-
 # تشغيل البرنامج
 
 ```bash
 python app.py
 ```
+
+![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/pylocalhost.gif)
 
 # كيف قمنا ببرمجة البرنامج ؟
 لقد قمنا بإنشاء درس تفصيلي نشرح فيه طريقة بناء برنامج PyLocalHost من الصفر
