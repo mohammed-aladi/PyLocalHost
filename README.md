@@ -41,8 +41,26 @@ python app.py
 
 ![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/static/img/pylocalhost.gif)
 
+
+## بعد تشغيل البرنامج, الخطوة الاولى إنشاء كلمة مرور
+
+سوف يطلب منك إنشاء كلمة مرور لصفحة المستفيدين. لن يستطيع أي زائر من الوصول إلى الملفات بدون إدخال كلمة المرور.
+
 ![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/static/img/1.PNG)
+
+
+## الخطوة الثانية رفع ملف
+
+![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/static/img/website.gif)
+
+# معلومات الاتصال
+
+عنوان البرنامج مع كلمة المرور سوف تظهر في صفحة الادمن
+
+![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/static/img/2.PNG)
+
 # كيف قمنا ببرمجة البرنامج ؟
 لقد قمنا بإنشاء درس تفصيلي نشرح فيه طريقة بناء برنامج PyLocalHost من الصفر
+
 
 رابط الشرح:
