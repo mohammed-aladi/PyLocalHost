@@ -1,5 +1,6 @@
 # 💻 PyLocalHost
-![PyPI](https://img.shields.io/pypi/v/flask?label=FLASK)
+[![image](https://img.shields.io/pypi/pyversions/pipenv.svg)](https://python.org/pypi/pipenv) ![PyPI](https://img.shields.io/pypi/v/flask?label=FLASK) [![image](https://img.shields.io/pypi/l/pipenv.svg)](https://python.org/pypi/pipenv)
+
 
 ### السلام عليكم ورحمة الله وبركاته
 
