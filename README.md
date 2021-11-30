@@ -39,8 +39,9 @@ pip install -r requirements.txt
 python app.py
 ```
 
-![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/pylocalhost.gif)
+![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/static/img/pylocalhost.gif)
 
+![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/static/img/1.PNG)
 # كيف قمنا ببرمجة البرنامج ؟
 لقد قمنا بإنشاء درس تفصيلي نشرح فيه طريقة بناء برنامج PyLocalHost من الصفر
 
