@@ -69,12 +69,6 @@ python app.py
 
 ![me](https://github.com/mohammed-aladi/PyLocalHost/blob/master/static/img/2.PNG)
 
-# كيف قمنا ببرمجة البرنامج ؟
-لقد قمنا بإنشاء درس تفصيلي نشرح فيه طريقة بناء برنامج PyLocalHost من الصفر
-
-
-رابط الشرح:
-
 
 # رخصة الاستخدام
 
